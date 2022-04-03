@@ -18,5 +18,5 @@ export let posts
 {#each posts as post}
     <h2>{post.title.rendered}</h2>
     <p>{@html post.excerpt.rendered}</p>
-    <a href="{`/posts/${post.id}`}">Read more</a>
+    <a href="{`/posts/${post.slug}`}">Read more</a>
 {/each}
